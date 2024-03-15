@@ -14,4 +14,5 @@ use App\Http\Controllers\StudentController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+Route::get('/students', [StudentController::class, 'getStudents']);
+Route::get('/students/{id}', [StudentController::class, 'getStudentById']);

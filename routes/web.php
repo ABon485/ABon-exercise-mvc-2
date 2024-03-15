@@ -9,8 +9,6 @@ use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\FruitController;
 use App\Models\Photo;
 use App\Http\Controllers\StudentController;
-
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,11 +19,4 @@ use App\Http\Controllers\StudentController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/api/students', [StudentController::class, 'getStudents']);
 Route::get('/students', [StudentController::class, 'showStudents']);
-Route::get('/api/students/{id}', [StudentController::class, 'getStudentById']);
-
-
-
-
-

@@ -32,7 +32,6 @@ class StudentController extends BaseController
         if (!$student) {
             return response()->json('Student not found', 404);
         }
-
         return response()->json($student);
     }
 }
